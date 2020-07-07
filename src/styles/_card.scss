@@ -10,12 +10,20 @@
   background-color: $card-bg-color;
 
   &__photo {
-    margin: 16px 0 42px;
+    margin: 4px 0 30px;
   }
-  
+
   &__img {
+    position: relative;
     width: 160px;
-    height: 134px;
+    height: 158px;
+    padding: 12px 0;
+    transition: transform $btn-and-link-hover;
+
+    &:hover {
+      transform: scale(1.2);
+      outline: 3px solid $card-brdr-color;
+    }
   }
   
   &__description-text {
@@ -92,6 +100,7 @@
       border-radius: 5px;
       color: $button-text-color;
       background-color: $button-bg-color;
+      transition: all $btn-and-link-hover;
 
       &:hover {
         color: $button-text-hover-color;
